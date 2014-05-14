@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Contact Information</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <main>
@@ -10,14 +11,13 @@
 
     <h2>Take a Picture of Yourself!</h2>
 
-      <video id="video" width="640" height="480" autoplay></video>
-      <button id="snap">Snap Photo</button>
-      <canvas id="canvas" width="640" height="480"></canvas>
+      <video id="video" width="320" height="240" autoplay></video>
+      <button id="snap">Record Your Mug For Posterity</button>
+      <canvas id="canvas" width="320" height="240"></canvas>
 
 </main>
 <body>
-
-    <SCRIPT type="text/javascript" src="photo.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="js/photo.js"></SCRIPT>
 
     <form id="register">
         <h2>Tell Us About Yourself</h2>
@@ -42,10 +42,16 @@
                 <input id="url" name="url" type="url" placeholder="http://mysite.com">
 
                 <label for="phone">Telephone</label>
-                <input id="phone" name="phone" type="tel" placeholder="Eg. +447000 000000" required>
+                <input id="phone" name="phone" type="tel" placeholder="Eg. (555)-555-5555" required>
 
-                <label for="shoes">Shoesize</label>
-                <input id="shoes" name="shoes" type="number" min="5" max="18" step="0.5" value="9">
+                <label for="twitter">Twitter</label>
+                <input id="twitter" name="twitter" type="text" placeholder="twitter_handle">
+
+                <label for="linkedin">LinkedIn</label>
+                <input id="linkedin" name="linkedin" type="text" placeholder="LinkedIn Profile Name">
+
+                <label for="github">GitHub</label>
+                <input id="github" name="github" type="text" placeholder="GitHub Repo">
         </fieldset>
 
         <fieldset>
@@ -62,3 +68,10 @@
                 <input id="skill" name="skill" type="range" min="1" max="100" value="0">
                 <output name="output" onforminput="value=a.value">0</output>
         </fieldset>
+
+        <fieldset>
+            <button type=submit>Submit</button>
+        </fieldset>
+
+</body>
+</html>

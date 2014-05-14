@@ -1,0 +1,28 @@
+video {
+  width: 0 auto;
+  margin: 0 25%;
+}
+
+button {
+  width: 0 auto;
+  margin: 0 25%;
+}
+
+canvas {
+  width: 0 auto;
+  margin: 0 25%;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  display: block;
+  margin: 2em
+}
+
+input:not([type=radio]), textarea {
+  width: 95%;
+  margin: .5em;
+}
