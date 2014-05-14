@@ -54,6 +54,7 @@ function success(position) {
       map: map,
       title:"Here we are!"
   });
+
 }
 
 // Function that displays the error message

@@ -1,3 +1,5 @@
+<<<<<<< HEAD:photo.js
+=======
 // Put event listeners into place
 window.addEventListener("DOMContentLoaded", function() {
   // Grab elements, create settings, etc.
@@ -34,3 +36,4 @@ document.getElementById("snap").addEventListener("click", function() {
 });
 
 }, false);
+>>>>>>> 9bf95c4ff7db634fa4b14434cb301ac71a7cbd6a:js/photo.js
