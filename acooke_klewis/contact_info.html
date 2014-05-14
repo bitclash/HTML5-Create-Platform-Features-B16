@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Contact Information</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <nav>
+    <a href="home.html" target="blank">Home</a>
+    <a href="students.html" target="blank">Current Students</a>
+    <a href="projects.html" target="blank">Project History</a>
+    <a href="contact_info.html" target="blank">Create a Student Profile</a>
+  </nav>
+  <main>
+    <header>
+      <h1>Code Fellows UXEDD Student Contact Info</h1>
+      <h2>Take a Picture of Yourself!</h2>
+    </header>
+      <video id="video" width="320" height="240" autoplay></video>
+      <button id="snap">Record Your Mug For Posterity</button>
+      <canvas id="canvas" width="320" height="240"></canvas>
+
+      <form id="register">
+        <h2>Tell Us About Yourself</h2>
+          <fieldset>
+            <legend>Personal Details</legend>
+            <label for="given-name">First Name</label>
+            <input id="given-name" name="given-name" type="text" placeholder="First name only" required autofocus>
+
+            <label for="family-name">Last Name</label>
+            <input id="family-name" name="family-name" type="text" placeholder="Last name only" required autofocus>
+
+            <label for="dob">Date of Birth</label>
+            <input id="dob" name="dob" type="date" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+
+            <label for="url">URL</label>
+            <input id="url" name="url" type="url" placeholder="http://mysite.com">
+
+            <label for="phone">Telephone</label>
+            <input id="phone" name="phone" type="tel" placeholder="Eg. (555)-555-5555" required>
+
+            <label for="twitter">Twitter</label>
+            <input id="twitter" name="twitter" type="text" placeholder="twitter_handle">
+
+            <label for="linkedin">LinkedIn</label>
+            <input id="linkedin" name="linkedin" type="text" placeholder="LinkedIn Profile Name">
+
+            <label for="github">GitHub</label>
+            <input id="github" name="github" type="text" placeholder="GitHub Repo">
+          </fieldset>
+
+          <fieldset>
+            <legend>Skill Levels</legend>
+              <label for="skill">HTML5 (1 low - 100 high)</label>
+              <input id="skill" name="skill" type="range" min="1" max="100" value="0">
+              <output name="output" onforminput="value=a.value">0</output>
+
+              <label for="skill">CSS (1 low - 100 high)</label>
+              <input id="skill" name="skill" type="range" min="1" max="100" value="0">
+              <output name="output" onforminput="value=a.value">0</output>
+
+              <label for="skill">JavaScript (1 low - 100 high)</label>
+              <input id="skill" name="skill" type="range" min="1" max="100" value="0">
+              <output name="output" onforminput="value=a.value">0</output>
+          </fieldset>
+
+          <fieldset>
+            <button type=submit>Submit</button>
+          </fieldset>
+  </main>
+
+  <SCRIPT type="text/javascript" src="js/photo.js"></SCRIPT>
+
+</body>
+</html>
